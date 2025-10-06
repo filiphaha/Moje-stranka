@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Vítej</title>
+</head>
+<body>
+  <body style="background-color: black; color: white;"></body>
+  <div class="xxxxx">
+    <p>{{ username }}</p>
+  </div>
+  <h1 class="nadpisy">Ahoj {{ username_voc }}! </h1>
+  <p>Úspěšně jste se přihlásil.</p>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</body>
+</html>
+<p> O stránce - Stránku jsem začal vytvářet 05.10.2025, stále na ní aktivně pracuji a snažím se zlepšovat jak ji, tak sebe :D > <a href="{{ url_for('devlog') }}" class="cool-btn">Devlog</a></p>
+<p><a href="{{ url_for('about') }}" class="cool-btn">O mně</a></p>
+<p><a href="{{ url_for('zivotopis') }}" class="cool-btn">Životopis</a></p>
+<div class="xxxx">
+  <p><a href="{{ url_for('login') }}" class="cool-btn">Odhlásit</a></p>
+</div>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</nav>

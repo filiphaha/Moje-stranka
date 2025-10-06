@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>O mně</title>
+</head>
+<body>
+    <body style="background-color: black; color: white;">
+    <div class="nadpisy2">
+        <h1>O mně</h1>
+    </div>
+        <p> Ahoj jsem Filip, a ucim se cookovat v tyhle picovine :D</p>
+        <div class="o-mne-container">
+        <p> Můj instagram -</p>
+        <a href="https://www.instagram.com/_filip.riedl_/#">
+        <img src="{{ url_for('static', filename='iglog.jpg') }}" alt="moje fotka" class="profil" >
+        </a>
+        </div>
+    <div class="o-mne-container">
+    <p>Můj discord   -</p>
+        <a href="https://discord.gg/nH4ykgSyp2">
+            <img src="{{ url_for('static', filename='dis.jpg') }}" alt="discord" class="discordek" >
+            </a>
+    </div>
+        <div class="zpet">
+            <a href="{{ url_for('success') }}" class="cool-btn">Zpět</a>
+        </div> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</body>
+</html>

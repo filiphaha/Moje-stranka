@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs"
+<head>
+    <meta charset="UTF-8">
+    <title>Registrace</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Registrace</h1>
+    {% if error %}
+     <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+<form method="POST", action="/register">
+    <label>Uživatelsé jméno:</label><br>
+    <input type="text" name="user" required><br><br>
+
+    <label>Heslo</label><br>
+    <input type="password" name="password" required><br><br>
+    <button type="sumbit">Registrovat</button>
+</form> 
+
+<p>Už máš účet? <a href="{{ url_for('login') }}" style="color: red;">Přihlaš se</a></p>
+</body>
+<html
